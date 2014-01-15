@@ -17,18 +17,19 @@ uname -a
 date
 w
 ps aux
+df -h
 ifconfig -a
 iptables -L --line-numbers -v -n
-df -h
-pstree -paG
+iptables -L --line-numbers -v -n -t nat
+pstree -pau
+cat /proc/user_beancounters
 lsof'
 
 DT=`date +%Y-%m-%d_%Hh%Mm%Ss`
 PATH="/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/root/bin"
 
 OUT_DIR=/apps/apps-backup
-#OUT_FILE=${OUT_DIR}/STAT-${DT}.out
-OUT_FILE=${OUT_DIR}/STAT.out
+OUT_FILE=${OUT_DIR}/STAT-${DT}.out
 
 IFS='
 '
