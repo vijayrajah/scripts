@@ -22,6 +22,7 @@ ifconfig -a
 iptables -L --line-numbers -v -n
 iptables -L --line-numbers -v -n -t nat
 pstree -pau
+ntpdate -q -u pool.ntp.org
 cat /proc/user_beancounters
 lsof'
 
