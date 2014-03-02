@@ -3,8 +3,9 @@
 
 
 ##Check with pid's are using swap
+##AUthor: Vijay Rajah
+##Email: me@rvijay.in
 
-#IFS=" "
 
 for i in `ls -d /proc/[1-9]*`
 do
